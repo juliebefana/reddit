@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function PostItem({ post }) {
   const [author, setAuthor] = useState(null);
 
+
   useEffect(() => {
     // Fetch the author data for the post
     fetch(`https://dummyjson.com/users/${post.userId}`)
@@ -25,6 +26,8 @@ function PostItem({ post }) {
         <p>{truncatedContent}</p>
         <p>Tags: {post.tags.join(", ")}</p>
         {author && <p>Author: {author.firstName} {author.lastName}</p>}
+        <p>Total reactions: {post.reactions}</p>
+        
       </div>
     </div>
   );
