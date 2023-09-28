@@ -17,9 +17,10 @@ export default function RightSidar() {
                 className="RightSidebar__menu">
                     <h1 
                     className="popular_com">Popular communities</h1>
+                    <hr></hr>
                     {menus.map(menu => (
                         <li>
-                            <a href={menu.to}>{menu.text}</a>
+                            <a className="topics" href={menu.to}>{menu.text}</a>
                             </li>
                     ))}
                 </ul>
