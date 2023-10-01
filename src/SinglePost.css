@@ -1,57 +1,66 @@
 .single-post {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .single-post h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .single-post p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .single-post p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .single-post p strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .single-post .comments {
-    margin-top: 30px;
-  }
-  
-  .single-post .comments h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .single-post .comments ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .single-post .comments li {
-    margin-bottom: 20px;
-  }
-  
-  .single-post .comments li p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 5px;
-  }
-  
-  .single-post .comments li p:last-child {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.single-post p {
+  font-size: 18px; /* Increase font size for better readability */
+  line-height: 1.6; /* Slightly increase line height for better readability */
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.single-post p:last-child {
+  margin-bottom: 0;
+}
+
+.single-post p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.single-post .comments {
+  margin-top: 30px;
+  border-top: 1px solid #ccc; /* Add a border above comments for separation */
+  padding-top: 20px; /* Add space above comments */
+}
+
+.single-post .comments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.single-post .comments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.single-post .comments li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Add a border below each comment for separation */
+  padding-bottom: 20px; /* Add space below each comment */
+}
+
+.single-post .comments li p {
+  font-size: 16px; /* Reduce font size for comments */
+  line-height: 1.5;
+  margin-bottom: 10px; /* Slightly increase spacing between comment paragraphs */
+  color: #333;
+}
+
+.single-post .comments li p:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
   
