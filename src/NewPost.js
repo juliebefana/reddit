@@ -69,7 +69,7 @@ function NewPost({ users, onPostCreated }) {
         <div>
           <label>Select User:</label>
           <select value={selectedUser ? selectedUser.id : ""} onChange={(e) => {
-            const userId = e.target.value;
+            const userId = parseInt(e.target.value, 10); // Parse the value to an integer
             setSelectedUser(users.find((user) => user.id === userId));
           }}>
             <option value="">Select User</option>
