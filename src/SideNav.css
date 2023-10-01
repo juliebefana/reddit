@@ -10,9 +10,8 @@
     justify-content: center;
 }
 
-.sidenav__logo > img {
-    width: 60%;
-    margin: 10px 0;
+.sidenav__logo > a > img {
+    width: 50%; 
 }
 
 .sidenav__search {
@@ -46,3 +45,12 @@
     margin: 2em 0;
     border: 1px solid #f4f5fa;
 }
+
+
+.sidenav__logo a {
+    display: block;
+    text-align: center;
+}
+  
+
+  

@@ -13,8 +13,8 @@
 }
 
 .single-post p {
-  font-size: 18px; /* Increase font size for better readability */
-  line-height: 1.6; /* Slightly increase line height for better readability */
+  font-size: 18px; 
+  line-height: 1.6; 
   margin-bottom: 20px;
   color: #666;
 }
@@ -30,8 +30,8 @@
 
 .single-post .comments {
   margin-top: 30px;
-  border-top: 1px solid #ccc; /* Add a border above comments for separation */
-  padding-top: 20px; /* Add space above comments */
+  border-top: 1px solid #ccc; 
+  padding-top: 20px; 
 }
 
 .single-post .comments h3 {
@@ -47,14 +47,14 @@
 
 .single-post .comments li {
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc; /* Add a border below each comment for separation */
-  padding-bottom: 20px; /* Add space below each comment */
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 20px; 
 }
 
 .single-post .comments li p {
-  font-size: 16px; /* Reduce font size for comments */
+  font-size: 16px; 
   line-height: 1.5;
-  margin-bottom: 10px; /* Slightly increase spacing between comment paragraphs */
+  margin-bottom: 10px; 
   color: #333;
 }
 
