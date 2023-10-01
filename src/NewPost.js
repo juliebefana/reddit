@@ -7,7 +7,6 @@ function NewPost({ users, onPostCreated }) {
   const [selectedUser, setSelectedUser] = useState(null);
 
   const handleCreatePost = async () => {
-    // Check if all required fields are filled
     if (!title || !body || !tags || !selectedUser) {
       alert("Please fill in all fields.");
       return;
@@ -18,10 +17,8 @@ function NewPost({ users, onPostCreated }) {
       body,
       tags: tags.split(",").map((tag) => tag.trim()),
       userId: selectedUser.id,
-      // You may need to add reactions or other properties here
     };
 
-    // Send a POST request to the API to create a new post
     try {
       const response = await fetch("https://dummyjson.com/posts/add", {
         method: "POST",
@@ -34,10 +31,8 @@ function NewPost({ users, onPostCreated }) {
       if (response.ok) {
         const data = await response.json();
 
-        // Update the local state with the newly created post
         onPostCreated(data);
-        
-        // Clear the form fields
+
         setTitle("");
         setBody("");
         setTags("");
@@ -69,7 +64,7 @@ function NewPost({ users, onPostCreated }) {
         <div>
           <label>Select User:</label>
           <select value={selectedUser ? selectedUser.id : ""} onChange={(e) => {
-            const userId = parseInt(e.target.value, 10); // Parse the value to an integer
+            const userId = parseInt(e.target.value, 10); 
             setSelectedUser(users.find((user) => user.id === userId));
           }}>
             <option value="">Select User</option>
