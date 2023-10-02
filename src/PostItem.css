@@ -7,35 +7,30 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Title style */
+
   .post-item h2 {
     font-size: 1.2rem;
     margin-bottom: 8px;
     color: #333;
   }
   
-  /* Content style */
   .post-item p {
     font-size: 1rem;
     margin-bottom: 8px;
     color: #666;
   }
   
-  /* Tags style */
   .post-item p.tags {
     font-size: 0.9rem;
     color: #555;
   }
   
-  /* Creator style */
   .post-item p.creator {
     font-size: 0.9rem;
     color: #555;
     font-weight: bold;
   }
-  
-  /* Hover effect for the post item */
+
   .post-item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;

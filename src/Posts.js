@@ -1,5 +1,4 @@
 import React from "react";
-import "./Posts.css";
 import PostItem from "./PostItem";
 import { Link } from "react-router-dom";
 

@@ -33,7 +33,14 @@ body {
   display: flex;
 }
 
+.main {
+  flex: 1;
+  background-color: white;
+  padding: 10px 40px;
+}
+
 /* Styles for the new post form */
+
 .new-post {
 	background-color: #f0f0f0;
 	padding: 20px;
@@ -81,6 +88,15 @@ body {
 	background-color: #0056b3;
   }
 
+  .posts {
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    box-shadow: -1px 0px 5px 5px #F4f5fa;
+}
+
+/* Post Item */
+
   .post-item {
   border: 1px solid #e0e0e0;
   padding: 16px;
@@ -91,64 +107,57 @@ body {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Title style */
 .post-item h2 {
-  font-size: 1.4rem; /* Increase the font size for the title */
+  font-size: 1.4rem; 
   margin-bottom: 8px;
   color: #333;
 }
 
-/* Content style */
 .post-item p {
-  font-size: 1.2rem; /* Increase the font size for content */
-  margin-bottom: 12px; /* Slightly larger spacing for readability */
+  font-size: 1.2rem; 
+  margin-bottom: 12px; 
   color: #666;
 }
 
-/* Tags style */
 .post-item p.tags {
-  font-size: 1rem; /* Adjust font size for tags */
+  font-size: 1rem; 
   color: #555;
 }
 
-/* Creator style */
 .post-item p.creator {
-  font-size: 1rem; /* Adjust font size for creator info */
+  font-size: 1rem; 
   color: #555;
   font-weight: bold;
 }
 
-/* Hover effect for the post item */
 .post-item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Comment style */
 .post-item .comment {
-  border-top: 1px solid #ccc; /* Add a border to separate comments */
-  padding-top: 12px; /* Add space above comments */
-  margin-top: 12px; /* Add space below comments */
+  border-top: 1px solid #ccc; 
+  padding-top: 12px; 
+  margin-top: 12px; 
 }
 
-/* Comment author style */
 .post-item .comment .author {
   font-weight: bold;
   margin-bottom: 4px;
 }
 
-/* Comment text style */
 .post-item .comment .text {
   font-size: 1rem;
   color: #333;
   margin-bottom: 8px;
 }
 
-/* Adjust spacing for the last comment */
 .post-item .comment:last-child {
-  border-bottom: 1px solid #ccc; /* Add a border below the last comment */
-  padding-bottom: 12px; /* Add space below the last comment */
-  margin-bottom: 0; /* Remove the margin for the last comment */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 0;
 }
+
+/*Create post-button*/
 
 .CreatePost {
   border-radius: 30px;
@@ -165,3 +174,106 @@ body {
   background-color: white;
   
 }
+
+/* Header part*/
+
+.header {
+
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for the header */
+}
+
+.header_middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav_search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(244, 241, 241); 
+  padding: 8px;
+  border-radius: 25px;
+  width: 95%; 
+}
+
+input[type="text"] {
+  background-color: rgb(244, 241, 241);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+  margin-right: 10px; 
+  border-radius: 25px;
+}
+
+.search-icon {
+  width: 15px; 
+  height: 15px; 
+  margin-left: 10px;
+}
+
+/* Right sidebar*/
+
+.RightSidebar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.popular_com {
+  font-size: small;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.RightSidebar__menu {
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 110px;
+}
+
+.community-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin-bottom: 12px;
+}
+
+.community-name {
+  font-size: small;
+  font-weight: bold;
+}
+
+.member-count {
+  font-size: small;
+  color: #555;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.login-button-container {
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.login-button {
+  padding: 12px 15px;
+  background-color: #E04D00; 
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-button:hover {
+  background-color: #C74400;
+}
+
+

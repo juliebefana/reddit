@@ -11,12 +11,11 @@ function PostItem({ post }) {
     fetch(`https://dummyjson.com/users/${post.userId}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log("Author data:", data); // Check if author data is received
+        console.log("Author data:", data); //
         setAuthor(data);
       });
   }, [post.userId]);
 
-  // Get a portion of the content (max 60 characters)
   const truncatedContent = post.body.length > 60 ? post.body.slice(0, 60) + "..." : post.body;
 
   return (
