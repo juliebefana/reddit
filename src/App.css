@@ -39,6 +39,81 @@ body {
   padding: 10px 40px;
 }
 
+/* SideNav - Left sidebar */
+
+.sidenav {
+  width: 200px;
+  font-size: small;
+  box-shadow: 2px 0px 1px 1px #f4f5fa;
+}
+
+.sidenav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav__logo > a > img {
+  width: 50%; 
+}
+
+.sidenav__search {
+  margin: 2em 0;
+}
+
+.sidenav__search > input {
+  padding: 8px 10px;
+  border: 1px solid #f4f5fa;
+  box-shadow: 0px 1px 0px 1px #f4f5fa;
+  border-radius: 0px 50px 50px 0px;
+  position: relative;
+  outline-width: 0;
+}
+
+.sidenav__search > i {
+  right: 30px;
+  position: relative;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.sidenav__link li {
+  padding: 10px 15px;
+}
+
+.sidenav hr {
+  margin: 2em 0;
+  border: 1px solid #f4f5fa;
+}
+
+
+.sidenav h2{
+  margin-left: -5px;
+  color: #808080;
+
+}
+
+.sidenav__subreddit {
+  margin-left: 25px;
+}
+
+.sidenav__topics {
+  margin-left: 25px;
+}
+
+.sidenav__menu {
+  margin-left: 25px;
+}
+
+
+.sidenav__logo a {
+  display: block;
+  text-align: center;
+}
+
 /* Styles for the new post form */
 
 .new-post {
@@ -93,68 +168,6 @@ body {
     padding: 0.5em 1em;
     border-radius: 5px;
     box-shadow: -1px 0px 5px 5px #F4f5fa;
-}
-
-/* Post Item */
-
-  .post-item {
-  border: 1px solid #e0e0e0;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-radius: 4px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.post-item h2 {
-  font-size: 1.4rem; 
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.post-item p {
-  font-size: 1.2rem; 
-  margin-bottom: 12px; 
-  color: #666;
-}
-
-.post-item p.tags {
-  font-size: 1rem; 
-  color: #555;
-}
-
-.post-item p.creator {
-  font-size: 1rem; 
-  color: #555;
-  font-weight: bold;
-}
-
-.post-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.post-item .comment {
-  border-top: 1px solid #ccc; 
-  padding-top: 12px; 
-  margin-top: 12px; 
-}
-
-.post-item .comment .author {
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.post-item .comment .text {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.post-item .comment:last-child {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 12px;
-  margin-bottom: 0;
 }
 
 /*Create post-button*/
@@ -276,4 +289,110 @@ hr {
   background-color: #C74400;
 }
 
+/* Single post */
+
+.single-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.single-post p {
+  font-size: 18px; 
+  line-height: 1.6; 
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.single-post p:last-child {
+  margin-bottom: 0;
+}
+
+.single-post p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.single-post .comments {
+  margin-top: 30px;
+  border-top: 1px solid #ccc; 
+  padding-top: 20px; 
+}
+
+.single-post .comments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.single-post .comments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.single-post .comments li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 20px; 
+}
+
+.single-post .comments li p {
+  font-size: 16px; 
+  line-height: 1.5;
+  margin-bottom: 10px; 
+  color: #333;
+}
+
+.single-post .comments li p:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+/* Post Item */
+
+
+.post-item {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.post-item p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.post-item p.tags {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.post-item p.creator {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
 

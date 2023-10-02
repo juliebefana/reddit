@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./SinglePost.css";
 
 function SinglePost() {
   const { postId } = useParams();

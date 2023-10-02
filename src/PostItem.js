@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./PostItem.css";
-import { Link } from "react-router-dom";
 
 function PostItem({ post }) {
   const [author, setAuthor] = useState(null);
