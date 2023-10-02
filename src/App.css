@@ -59,3 +59,120 @@ body {
 .container {
   display: flex;
 }
+
+/* Styles for the new post form */
+.new-post {
+	background-color: #f0f0f0;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 20px;
+  }
+  
+  .new-post h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .new-post form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .new-post label {
+	margin-bottom: 5px;
+  }
+  
+  .new-post input[type="text"],
+  .new-post textarea,
+  .new-post select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+  }
+  
+  .new-post button {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .new-post button:hover {
+	background-color: #0056b3;
+  }
+
+  .post-item {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Title style */
+.post-item h2 {
+  font-size: 1.4rem; /* Increase the font size for the title */
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Content style */
+.post-item p {
+  font-size: 1.2rem; /* Increase the font size for content */
+  margin-bottom: 12px; /* Slightly larger spacing for readability */
+  color: #666;
+}
+
+/* Tags style */
+.post-item p.tags {
+  font-size: 1rem; /* Adjust font size for tags */
+  color: #555;
+}
+
+/* Creator style */
+.post-item p.creator {
+  font-size: 1rem; /* Adjust font size for creator info */
+  color: #555;
+  font-weight: bold;
+}
+
+/* Hover effect for the post item */
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Comment style */
+.post-item .comment {
+  border-top: 1px solid #ccc; /* Add a border to separate comments */
+  padding-top: 12px; /* Add space above comments */
+  margin-top: 12px; /* Add space below comments */
+}
+
+/* Comment author style */
+.post-item .comment .author {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Comment text style */
+.post-item .comment .text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Adjust spacing for the last comment */
+.post-item .comment:last-child {
+  border-bottom: 1px solid #ccc; /* Add a border below the last comment */
+  padding-bottom: 12px; /* Add space below the last comment */
+  margin-bottom: 0; /* Remove the margin for the last comment */
+}

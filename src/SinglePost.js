@@ -8,7 +8,8 @@ function SinglePost() {
   const [author, setAuthor] = useState(null);
   const [comments, setComments] = useState([]);
   const [reactions, setReactions] = useState(0);
-  const [newComment, setNewComment] = useState(""); // State for the new comment input
+  const [newComment, setNewComment] = useState("");
+  const [isLiked, setIsLiked] = useState(false);
 
   useEffect(() => {
     // Fetch the data for the selected post
@@ -43,20 +44,23 @@ function SinglePost() {
       });
   }, [postId]);
 
+  const handleLikeClick = () => {
+    setReactions(reactions + 1);
+    setIsLiked(true);
+  };
+
   const handleAddComment = () => {
     if (!newComment) {
       alert("Please enter your comment.");
       return;
     }
 
-    // Prepare the comment data
     const commentData = {
       body: newComment,
       postId: postId,
-      userId: 5, // Replace with the actual user ID or logic to get the user ID
+      userId: 5,
     };
 
-    // Send a POST request to add the new comment
     fetch("https://dummyjson.com/comments/add", {
       method: "POST",
       headers: {
@@ -67,8 +71,8 @@ function SinglePost() {
       .then((res) => res.json())
       .then((data) => {
         console.log("New Comment:", data);
-        setComments([...comments, data]); // Add the new comment to the local state
-        setNewComment(""); // Clear the comment input
+        setComments([...comments, data]);
+        setNewComment("");
       })
       .catch((error) => {
         console.error("Error adding comment:", error);
@@ -83,8 +87,12 @@ function SinglePost() {
           <p>{post.body}</p>
           <p>Tags: {post.tags.join(", ")}</p>
           {author && <p>Author: {author.firstName} {author.lastName}</p>}
-          {reactions > 0 && <p>Total Reactions: {reactions}</p>}
-          {/* Display comments */}
+          <p>Total Reactions: {reactions}</p>
+          <div className="likes">
+            <button onClick={handleLikeClick} disabled={isLiked}>
+              {isLiked ? "Liked" : "Like"}
+            </button>
+          </div>
           <div className="comments">
             <h3>Comments</h3>
             <ul>
@@ -96,7 +104,6 @@ function SinglePost() {
               ))}
             </ul>
           </div>
-          {/* Comment input form */}
           <div className="comment-input">
             <input
               type="text"
