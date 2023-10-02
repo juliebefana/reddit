@@ -47,10 +47,27 @@
 }
 
 
+.sidenav h2{
+    margin-left: -5px;
+    color: #808080;
+
+}
+
+.sidenav__subreddit {
+    margin-left: 25px;
+}
+
+.sidenav__topics {
+    margin-left: 25px;
+}
+
+.sidenav__menu {
+    margin-left: 25px;
+}
+
+
 .sidenav__logo a {
     display: block;
     text-align: center;
 }
-  
-
   

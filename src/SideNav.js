@@ -7,22 +7,22 @@ export default function SideNav() {
         { to: '/r/all', text: "All"},
         { to: '/r/random', text: "Random"}
     ]
+
+    const topics = [
+        "Gaming",
+        "Sports",
+        "Business",
+        "Crypto",
+        "Television",
+        "Celebirty",
+    ]
     const subreddits = [
-        "askreddit",
-        "worldnews",
-        "videos",
-        "funny",
-        "todayilearned",
-        "pics",
-        "gaming",
-        "movies",
-        "news",
-        "gifs",
-        "askreddit",
-        "mildlyinteresting",
-        "showerthoughts",
-        "aww",
-        "dataisbeautiful",
+        "About Reddit",
+        "Advertise",
+        "Help",
+        "Blog",
+        "Careers",
+        "Press",
     ]
     return (
         <div className="sidenav">
@@ -39,7 +39,15 @@ export default function SideNav() {
 
                 </ul>
                 <hr />
+                <ul className="sidenav__topics">
+                    <h2>TOPICS</h2>
+                    {topics.map(topics =>(
+                       <li><a href={`/r/${topics}`}>{topics}</a></li> 
+                    ))}
+                    <hr />
+                </ul>
                 <ul className="sidenav__subreddit">
+                    <h2>RESOURCES</h2>
                     {subreddits.map(subreddit => (
                         <li><a href={`/r/${subreddit}`}>{subreddit}</a></li>
                     ))}
