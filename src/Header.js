@@ -10,21 +10,6 @@ function Header() {
         </div>
 
       </div>
-
-      <div className="header__right">
-
-        <i className="fas fa-bell"></i>
-        <img
-          src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-female-avatar-vector-icon-png-image_3725439.jpg"
-        />
-        
-        <div className="header__user">
-
-            <span>Jane Doe</span>
-            <i className="fas fa-caret-down"></i>
-        </div>
-
-      </div>
     </div>
   );
 }
