@@ -12,6 +12,9 @@ export default function RightSidebar() {
 
   return (
     <div className="RightSidebar">
+      <div className="login-button-container">
+        <button className="login-button">Log In</button>
+      </div>
       <ul className="RightSidebar__menu">
         <h2 className="popular_com">Popular communities</h2>
         <hr />
@@ -25,4 +28,5 @@ export default function RightSidebar() {
     </div>
   );
 }
+
 
