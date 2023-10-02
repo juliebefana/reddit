@@ -176,3 +176,19 @@ body {
   padding-bottom: 12px; /* Add space below the last comment */
   margin-bottom: 0; /* Remove the margin for the last comment */
 }
+
+.CreatePost {
+  border-radius: 30px;
+  border: 1px solid transparent;
+  border-color: #a3a2a2;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.CreatePost:hover{
+  border-color: black;
+  background-color: white;
+  
+}
