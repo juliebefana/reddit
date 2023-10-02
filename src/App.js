@@ -44,7 +44,7 @@ function App() {
         <SideNav />
         <Main>
           <Header />
-          <button onClick={() => setShowNewPostForm(!showNewPostForm)}>Create New Post</button>
+          <button className="CreatePost"onClick={() => setShowNewPostForm(!showNewPostForm)}>Create a post</button>
           {showNewPostForm && <NewPost users={users} onPostCreated={handlePostCreated} />}
           <Routes>
             <Route path="/" element={<Posts posts={posts} />} />
