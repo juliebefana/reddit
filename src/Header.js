@@ -1,14 +1,14 @@
 import React from "react";
 import "./Header.css";
+
 function Header() {
   return (
     <div className="header">
-      <div className="header__left">
-        <div className="sidenav__search">
-                <input type="text" name="search" placeholder="Search" />
-                <i className="fas fa-search"></i>
+      <div className="header_middle">
+        <div className="sidenav_search">
+          <img src="/search.png" alt="Search Icon" className="search-icon" />
+          <input type="text" name="search" placeholder="Search Reddit" />
         </div>
-
       </div>
     </div>
   );
